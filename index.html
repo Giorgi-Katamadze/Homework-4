@@ -5,24 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <img class="museum-logo" src="./src/MuseumLogo.jpeg" alt="Museum Logo" />
-      <ul>
-        <li>Home</li>
-        <li>Info</li>
-        <li>Contact</li>
-      </ul>
-      <div class="container">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </nav>
-
-    <section class="banner">
+    <header>
+      <nav>
+        <img
+          class="museum-logo"
+          src="./src/MuseumLogo.jpeg"
+          alt="Museum Logo"
+        />
+        <ul>
+          <li>
+            <a href="#home"> Home </a>
+          </li>
+          <li><a href="#info">
+            Info
+          </a></li>
+          <li><a href="#contact">
+            Contact
+          </a></li>
+        </ul>
+        <div class="container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="banner" id="home">
       <h1>Nasional Museum</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -49,7 +63,7 @@
       </p>
     </section>
 
-    <section class="info">
+    <section class="info" id="info">
       <div class="info-child">
         <img class="info-logo-1" src="./src/world logo.png" alt="" />
         <p>
@@ -79,28 +93,52 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="con-head">
         <h2>Contact Us</h2>
         <p>
           <i>Get The Info You're Looking For Right Now</i>
         </p>
       </div>
-      <div class="cont-inf">
+      <div class="con-info">
         <h3>Address: Tbilisi</h3>
         <h3>Email: 123@gmail.com</h3>
         <h3>Number: 123456789</h3>
       </div>
+      <div>
+        <textarea
+          name=""
+          id=""
+          cols="50"
+          rows="10"
+          placeholder="ask something"
+        ></textarea>
 
-      <textarea
-        name=""
-        id=""
-        cols="100"
-        rows="10"
-        placeholder="ask something"
-      ></textarea>
-    
-      <input type="submit">
+        <input type="submit" />
+      </div>
     </section>
+
+    <footer class="bottom">
+      <div class="bottom-nav">
+        <nav>
+          <ul>
+            <ul>
+              <li>
+                <a href="#home"> Home </a>
+              </li>
+              <li><a href="#info">
+                Info
+              </a></li>
+              <li><a href="#contact">
+                Contact
+              </a></li>
+            </ul>
+        </nav>
+      </div>
+      <div>
+        <span class="copyright">Copyright © 2023</span>
+        <a href="https://github.com/">Giorgi Katamadze</a>
+      </div>
+    </footer>
   </body>
 </html>

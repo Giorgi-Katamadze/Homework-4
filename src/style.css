@@ -2,15 +2,23 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-image: url("./cover.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* header */
+/* header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
 
 nav {
   display: flex;
@@ -30,6 +38,11 @@ ul {
   gap: 100px;
   align-items: center;
   color: white;
+  cursor: pointer;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
 }
 
 .bar1,
@@ -40,6 +53,7 @@ ul {
   background-color: white;
   margin: 8px 0;
   border-radius: 1em;
+
 }
 
 /* Home */
@@ -93,6 +107,7 @@ h1 {
    width: 60%;
    margin: 100px auto;
    border-radius: 1em;
+   box-shadow: 0 10px 10px 10px rgb(1, 29, 24);
 }
 
 
@@ -100,7 +115,7 @@ h1 {
     text-align: center;
 }
 
-.cont-inf{
+.con-info{
     display: flex;
     justify-content: space-evenly;
     margin: 20px 0;
@@ -112,6 +127,37 @@ textarea{
 input{
     padding: 8px;
     width: 100px;
-    margin: 6px auto;
+    display: block;
+    margin: 16px auto;
 }
+
+textarea{
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+footer{
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding: 25px;
+}
+.bottom-nav{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: antiquewhite;
+  text-decoration:none;
+  transition: 0.5;
+  }
 
